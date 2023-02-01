@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $color-beige;
+  color: $color-beige;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
