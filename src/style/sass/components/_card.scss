@@ -1,5 +1,5 @@
 aside{
-    width: 30vw;
+    width: clamp(185px, 30vw, 325px);
     padding: $marge;
     background-color: $color-vert;
     flex: 1;

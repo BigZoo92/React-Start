@@ -196,7 +196,7 @@ header p {
 }
 
 aside {
-  width: 30vw;
+  width: clamp(185px, 30vw, 325px);
   padding: calc(10px + 2vw);
   background-color: #8fc0a9;
   flex: 1;
