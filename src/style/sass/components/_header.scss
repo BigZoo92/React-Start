@@ -6,6 +6,14 @@ header{
     padding: $marge;
     background: $color-forest;
     color: $color-beige;
+    div{
+        display: flex;
+        align-items: stretch;
+        gap: $marge;
+        img{
+            width: clamp(35px, 5vw, 6em);
+        }
+    }
     p{
         font-size: clamp(1em, 1.75vw, 1.5em);
         font-weight: 200;

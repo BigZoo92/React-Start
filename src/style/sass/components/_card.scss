@@ -11,7 +11,14 @@ aside{
         flex-direction: column;
         gap: calc($marge - 1.5vw);
         li{
-            &:nth-of-type(4){
+            text-transform: capitalize;
+            div{
+                font-size: clamp(0.6em, 0.8vw, 0.8em);
+                color: $color-red;
+                padding-top: 7px;
+                text-transform: uppercase;
+            }
+            &:nth-last-of-type(1){
             font-size: clamp(1.25rem, 1.7vw, 1.75rem);
             font-weight: 600;
             color: $color-marron;

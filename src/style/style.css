@@ -189,6 +189,14 @@ header {
   background: #4a7c59;
   color: #faf3dd;
 }
+header div {
+  display: flex;
+  align-items: stretch;
+  gap: calc(10px + 2vw);
+}
+header div img {
+  width: clamp(35px, 5vw, 6em);
+}
 header p {
   font-size: clamp(1em, 1.75vw, 1.5em);
   font-weight: 200;
@@ -209,7 +217,16 @@ aside ul {
   flex-direction: column;
   gap: calc(10px + 2vw - 1.5vw);
 }
-aside ul li:nth-of-type(4) {
+aside ul li {
+  text-transform: capitalize;
+}
+aside ul li div {
+  font-size: clamp(0.6em, 0.8vw, 0.8em);
+  color: #bc4749;
+  padding-top: 7px;
+  text-transform: uppercase;
+}
+aside ul li:nth-last-of-type(1) {
   font-size: clamp(1.25rem, 1.7vw, 1.75rem);
   font-weight: 600;
   color: #372e28;
