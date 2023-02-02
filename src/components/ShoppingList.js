@@ -1,3 +1,4 @@
+import CareScale from "./CareScale";
 const plantList = [
     {
         name: 'monstera',
@@ -5,6 +6,8 @@ const plantList = [
         id: '1ed',
         isBestSale: true,
         isSpecialOffer: false,
+        water: 3,
+        light: 2,
     },
     {
         name: 'ficus lyrata',
@@ -12,6 +15,8 @@ const plantList = [
         id: '2ed',
         isBestSale: false,
         isSpecialOffer: false,
+        water: 3,
+        light: 2,
     },
     {
         name: 'pothos argenté',
@@ -19,6 +24,8 @@ const plantList = [
         id: '3ed',
         isBestSale: false,
         isSpecialOffer: true,
+        water: 3,
+        light: 2,
     },
     {
         name: 'yucca',
@@ -26,6 +33,8 @@ const plantList = [
         id: '4ed',
         isBestSale: false,
         isSpecialOffer: false,
+        water: 3,
+        light: 2,
     },
     {
         name: 'palmier',
@@ -33,6 +42,8 @@ const plantList = [
         id: '5ed',
         isBestSale: false,
         isSpecialOffer: true,
+        water: 3,
+        light: 2,
     }
 ]
 
@@ -41,8 +52,12 @@ function ShoppingList() {
         <ul>
             {plantList.map((plant) => (
                 <li key={ plant.id }>
-                   {plant.name} {plant.isBestSale && <span>🔥</span>}
+                    {plant.name} {plant.isBestSale && <span>🔥</span>}
                     {plant.isSpecialOffer && <div>sold -15%</div>}
+                    <div>
+                        <CareScale careType='water' scaleValue={plant.water} />
+                        <CareScale careType='light' scaleValue={plant.light} />
+			        </div>
                 </li>
             ))}
             <li>Total : </li>
