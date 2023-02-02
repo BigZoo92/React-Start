@@ -218,13 +218,27 @@ aside ul {
   gap: calc(10px + 2vw - 1.5vw);
 }
 aside ul li {
+  display: flex;
+  align-items: stretch;
   text-transform: capitalize;
+  gap: calc(10px + 2vw);
+}
+aside ul li img {
+  width: 75px;
 }
 aside ul li div {
   font-size: clamp(0.6em, 0.8vw, 0.8em);
   color: #bc4749;
   padding-top: 7px;
   text-transform: uppercase;
+}
+aside ul li div .carescale {
+  display: flex;
+}
+aside ul li div h4 {
+  color: #faf3dd;
+  font-size: clamp(1.2em, 2vw, 2em);
+  font-weight: 600;
 }
 aside ul li:nth-last-of-type(1) {
   font-size: clamp(1.25rem, 1.7vw, 1.75rem);

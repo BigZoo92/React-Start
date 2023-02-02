@@ -11,12 +11,26 @@ aside{
         flex-direction: column;
         gap: calc($marge - 1.5vw);
         li{
+            display: flex;
+            align-items: stretch;
             text-transform: capitalize;
+            gap: $marge;
+            img{
+                width: 75px;
+            }
             div{
                 font-size: clamp(0.6em, 0.8vw, 0.8em);
                 color: $color-red;
                 padding-top: 7px;
                 text-transform: uppercase;
+                .carescale{
+                    display: flex;
+                }
+                h4{
+                    color: $color-beige;
+                    font-size: clamp(1.2em, 2vw, 2em);
+                    font-weight: 600;
+                }
             }
             &:nth-last-of-type(1){
             font-size: clamp(1.25rem, 1.7vw, 1.75rem);
