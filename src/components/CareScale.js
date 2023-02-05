@@ -4,7 +4,7 @@ function CareScale({ scaleValue, careType }) {
     const scaleType = careType === 'light' ? '☀️' : '💧'
 
     return (
-        <div class="carescale">
+        <div className="carescale">
             {range.map((rangeElem) => scaleValue >= rangeElem ? <span key={rangeElem.toString()}>{scaleType}</span> : null
             )}
         </div>

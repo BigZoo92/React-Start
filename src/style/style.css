@@ -180,6 +180,12 @@ body {
   height: 100vh;
 }
 
+main {
+  display: flex;
+  background-color: #faf3dd;
+  width: 100%;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -203,11 +209,36 @@ header p {
   text-align: right;
 }
 
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  padding: calc(10px + 2vw);
+  background-color: #68b0ab;
+}
+footer h2 {
+  font-size: clamp(2em, 3vw, 3em);
+  font-weight: 600;
+  margin-top: calc(10px + 2vw);
+}
+footer form {
+  padding: calc(10px + 2vw);
+  display: flex;
+  gap: calc((10px + 2vw) / 3);
+  flex-direction: column;
+  width: clamp(185px, 30vw, 325px);
+}
+footer form label {
+  font-weight: 500;
+}
+
 aside {
   width: clamp(185px, 30vw, 325px);
   padding: calc(10px + 2vw);
   background-color: #8fc0a9;
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: calc(10px + 2vw);

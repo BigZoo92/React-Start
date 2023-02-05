@@ -20,4 +20,8 @@ body {
   height: 100vh;
 }
 
-
+main{
+  display: flex;
+  background-color: $color-beige;
+  width: 100%;
+}

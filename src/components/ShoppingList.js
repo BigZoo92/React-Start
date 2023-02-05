@@ -13,7 +13,7 @@ function ShoppingList() {
 					/>
 				))}
                 <li>Total : 90€</li>
-			</ul>
+		</ul>
     )
 }
 
