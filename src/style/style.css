@@ -236,15 +236,40 @@ footer form label {
 }
 
 aside {
-  width: clamp(185px, 30vw, 325px);
+  width: clamp(185px, 30vw, 375px);
   padding: calc(10px + 2vw);
   background-color: #8fc0a9;
   display: flex;
   flex-direction: column;
   gap: calc(10px + 2vw);
 }
+aside div {
+  display: flex;
+  flex-direction: column;
+  gap: calc((10px + 2vw) / 3);
+}
 aside button {
-  width: 100%;
+  width: calc(clamp(185px, 30vw, 375px) - (10px + 2vw) * 2);
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #faf3dd;
+  font-size: clamp(1em, 2vw, 2em);
+  border-bottom: 2px solid #faf3dd;
+  text-align: left;
+  padding-left: 0;
+}
+aside .card_plant_name {
+  text-transform: capitalize;
+  font-size: clamp(1em, 1.5vw, 1.25em);
+  font-weight: 400;
+}
+aside .total {
+  font-size: clamp(1em, 1.5vw, 1.25em);
+  font-weight: 600;
 }
 
 section article ul {

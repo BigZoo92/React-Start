@@ -1,11 +1,37 @@
 aside{
-    width: clamp(185px, 30vw, 325px);
+    width: clamp(185px, 30vw, 375px);
     padding: $marge;
     background-color: $color-vert;
     display: flex;
     flex-direction: column;
     gap: $marge;   
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: calc($marge / 3);
+    }
     button{
-        width: 100%
+        width: calc(clamp(185px, 30vw, 375px) - calc($marge * 2));
+        appearance: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: $color-beige;
+        font-size: clamp(1em, 2vw, 2em);
+        border-bottom: 2px solid $color-beige;
+        text-align: left;
+        padding-left: 0;
+    }
+    .card_plant_name{
+        text-transform: capitalize;
+        font-size: clamp(1em, 1.5vw, 1.25em);
+        font-weight: 400;
+        
+    }
+    .total{
+        font-size: clamp(1em, 1.5vw, 1.25em);
+        font-weight: 600;
     }
 }
