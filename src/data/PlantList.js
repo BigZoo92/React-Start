@@ -8,6 +8,7 @@ export const PlantList = [
 		isBestSale: true,
 		light: 2,
 		water: 3,
+		price: 8,
 		cover: monstera,
 	},
 	{
@@ -16,6 +17,7 @@ export const PlantList = [
 		id: '2ab',
 		light: 3,
 		water: 1,
+		price: 10,
 		cover: monstera,
 	},
 	{
@@ -24,6 +26,7 @@ export const PlantList = [
 		id: '3sd',
 		light: 1,
 		water: 2,
+		price: 5,
 		cover: monstera,
 	},
 	{
@@ -32,6 +35,7 @@ export const PlantList = [
 		id: '4kk',
 		light: 3,
 		water: 1,
+		price: 15,
 		cover: monstera,
 	},
 	{
@@ -40,6 +44,7 @@ export const PlantList = [
 		id: '5pl',
 		light: 3,
 		water: 1,
+		price: 7,
 		cover: monstera,
 	},
 	{
@@ -48,6 +53,7 @@ export const PlantList = [
 		id: '6uo',
 		light: 2,
 		water: 2,
+		price: 12,
 		cover: monstera,
 	},
 	{
@@ -57,6 +63,7 @@ export const PlantList = [
 		isBestSale: true,
 		light: 2,
 		water: 3,
+		price: 20,
 		cover: monstera,
 	},
 	{
@@ -65,6 +72,7 @@ export const PlantList = [
 		id: '8fp',
 		light: 2,
 		water: 1,
+		price: 8,
 		cover: monstera,
 	},
 	{
@@ -73,6 +81,7 @@ export const PlantList = [
 		id: '9vn',
 		light: 2,
 		water: 1,
+		price: 25,
 		cover: monstera,
 	}
 ]

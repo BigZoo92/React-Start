@@ -243,40 +243,64 @@ aside {
   flex-direction: column;
   gap: calc(10px + 2vw);
 }
-aside ul {
+aside button {
+  width: 100%;
+}
+
+section article ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: calc((10px + 2vw) * 2.5);
+  column-gap: calc((10px + 2vw) * 2.5);
+  row-gap: calc(10px + 2vw);
+  color: #4a7c59;
+}
+section article ul li {
+  width: clamp(175px, 30%, 200px);
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: calc(10px + 2vw - 1.5vw);
+  gap: calc((10px + 2vw) / 3);
 }
-aside ul li {
-  display: flex;
-  align-items: stretch;
+section article ul li div {
+  margin-block: -5px;
+}
+section article ul li div span {
+  font-size: clamp(0.75em, 1vw, 1em);
+}
+section article ul li img {
+  width: 100%;
+  border-radius: 30px;
+}
+section article ul li h4 {
+  font-size: clamp(1.15em, 2vw, 2em);
+  font-weight: 600;
   text-transform: capitalize;
-  gap: calc(10px + 2vw);
 }
-aside ul li img {
-  width: 75px;
-}
-aside ul li div {
-  font-size: clamp(0.6em, 0.8vw, 0.8em);
-  color: #bc4749;
-  padding-top: 7px;
-  text-transform: uppercase;
-}
-aside ul li div .carescale {
-  display: flex;
-}
-aside ul li div h4 {
+section article ul li .infobulle_prix {
+  position: absolute;
+  background: #68b0ab;
   color: #faf3dd;
-  font-size: clamp(1.2em, 2vw, 2em);
-  font-weight: 600;
+  padding: calc((10px + 2vw) / 2.5);
+  border-radius: 30px 30px 30px 0px;
+  top: 0;
+  right: 0;
+  font-size: clamp(0.75em, 1vw, 1em);
 }
-aside ul li:nth-last-of-type(1) {
-  font-size: clamp(1.25rem, 1.7vw, 1.75rem);
-  font-weight: 600;
-  color: #372e28;
-  padding-top: calc(10px + 2vw - 1.5vw);
-  border-top: 1px solid #372e28;
+section article ul li button {
+  background: none;
+  outline: none;
+  border: none;
+  appearance: none;
+  font-size: 2em;
+  width: min-content;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  bottom: 0;
+  cursor: pointer;
+  color: #4a7c59;
 }
 
 /*# sourceMappingURL=style.css.map */

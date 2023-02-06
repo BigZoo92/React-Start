@@ -17,7 +17,7 @@ function Footer() {
 		<footer>
              <h2>Pour les passionné·e·s de plantes 🌿🌱🌵</h2>
             <form>
-                <label for="email_input">Laissez-nous votre mail :</label>
+                <label htmlFor="email_input">Laissez-nous votre mail :</label>
                 <input
                     id="email_input"
                     name="email_input"
